@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumo — Your AI Chat Companion</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="chat-app">
+    <header class="chat-header">
+      <div class="bot-avatar">L</div>
+      <div>
+        <h1>Lumo</h1>
+        <p class="status">Online</p>
+      </div>
+      <button id="reset-btn" title="Start a new chat">New chat</button>
+    </header>
+
+    <main id="messages" class="messages"></main>
+
+    <footer class="chat-input">
+      <input
+        id="user-input"
+        type="text"
+        placeholder="Message Lumo..."
+        autocomplete="off"
+      />
+      <button id="send-btn">Send</button>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
