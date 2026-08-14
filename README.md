@@ -33,7 +33,7 @@ lumo-chatbot/
 
 ## Notes
 
-- The model downloads (~1.6GB) on first run — this can take a few minutes.
+- The model downloads (~1.6GB) on first run, this can take a few minutes.
 - Conversation history is kept server-side in memory and resets on restart, or via the "New chat" button (calls `/reset`).
-- To swap in a different model, change `MODEL_NAME` in `app.py` — any Hugging Face seq2seq conversational model will work with minor tweaks.
+- To swap in a different model, change `MODEL_NAME` in `app.py`, any Hugging Face seq2seq conversational model will work with minor tweaks.
 - This uses Flask's built-in dev server. For anything beyond local testing, put it behind a production WSGI server (e.g. gunicorn).
